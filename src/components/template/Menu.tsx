@@ -1,20 +1,18 @@
-import { NavLink } from "react-router-dom";
+import {Icon360, IconAccessPoint, IconFolderCode, IconHome2, IconMail, IconRewindBackward60, IconUser } from "@tabler/icons-react";
+import ItensMenu from "./ItensMenu";
 
 export default function Menu(){
     return (
-        <div className="flex justify-center h-full w-1/6 bg-zinc-700 p-4">
-            <div className="w-1/2 h-1/20 flex justify-center items-center">
-                <NavLink 
-                    to="/" 
-                    className={({ isActive }) => 
-                        `flex items-center p-2 rounded ${
-                            isActive ? "text-amber-200 bg-amber-950" : "text-zinc-400"
-                        }`
-                    }
-                >
-                    Página Inicial
-                </NavLink>
+        <div className="flex  h-full w-1/6 bg-zinc-700 ">
+            <div className="h-1/20 w-full flex flex-col p-10 gap-4 ">
+                <ItensMenu text="Início" url="/inicio" icon={IconHome2}/>
+                <ItensMenu text="Projetos" url="/projetos" icon={IconFolderCode}/>
+                <ItensMenu text="Contatos" url="/contatos" icon={IconMail}/>
             </div>
+
+
         </div>
     );
 }
+
+
