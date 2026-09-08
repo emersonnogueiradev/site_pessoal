@@ -1,4 +1,4 @@
-import {Icon360, IconAccessPoint, IconFolderCode, IconHome2, IconMail, IconRewindBackward60, IconUser } from "@tabler/icons-react";
+import { IconFolderCode, IconHome2, IconMail } from "@tabler/icons-react";
 import ItensMenu from "./ItensMenu";
 
 export default function Menu(){
